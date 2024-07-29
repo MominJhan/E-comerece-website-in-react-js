@@ -1,0 +1,124 @@
+@font-face {
+   font-family: 'Tiemann';
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+   src: url("//www.sclothers.com/cdn/fonts/tiemann/tiemann_n4.5b52e2bce962763887021fba63a434499fd58ec1.woff2?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=177a22a3d5ff81cadc179b3e27039f10062747fa66843dc64574ccf2f33b7dac") format("woff2"),
+        url("//www.sclothers.com/cdn/fonts/tiemann/tiemann_n4.45d9bd10a82b6ecfcb090ac3403c779194d6e014.woff?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=50f94b8a28c96b1eaa06c27b28d196eb2e35c73f8f73a2999202f066b9db02b1") format("woff");
+ }
+ 
+ @font-face {
+   font-family: "Twentieth Century";
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+   src: url("//www.sclothers.com/cdn/fonts/twentieth_century/twentiethcentury_n4.1a7b2b68023505e1927302cc60a155187098ca59.woff2?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=36774fb6cd2fbd398fdc784c75b8dd6623649c7f552d46ac145f3adc45eeeee9") format("woff2"),
+        url("//www.sclothers.com/cdn/fonts/twentieth_century/twentiethcentury_n4.2bd9ba3193feaaeabefe6059cf0ba7e11c41e810.woff?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=8d7f83447fff8e394b246ba36ea7d2a77b1cc00d79ce56abf33064d344475ace") format("woff");
+ }
+ 
+ @font-face {
+   font-family: "Twentieth Century";
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+   src: url("//www.sclothers.com/cdn/fonts/twentieth_century/twentiethcentury_n6.0d3b76303d4b4a3612edbc69654ac2a8ca6886a4.woff2?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=0bc5e8244b32d9f693845fbed6cb68729e081bc34a5d317b7d4b83104e8dd9b3") format("woff2"),
+        url("//www.sclothers.com/cdn/fonts/twentieth_century/twentiethcentury_n6.c396df293741c34c7c780d8677bc681d3c3ecd42.woff?h1=c2Nsb3RoZXJzLmNvbQ&h2=c2Nsb3RoZXJzLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=6e1234a34559777de5a6a7ba9271b26426a64485a7fdd6b8fb00e210ce229bbb") format("woff");
+ }
+ /* ************************WomenWear css****************** */
+ .detailcontainer{
+     position: fixed;
+     z-index: 1;
+     align-items: center;
+     width: 900px;
+     background-color: white;
+     margin-left: 10%;
+     margin-bottom: 20%;
+     box-shadow: 2px 2px 2px grey;
+     border: 1px solid #e8e8e8;
+     padding: 20px 30px;
+     border-radius: 5px;
+     margin-top: 5%;
+ }
+ .productdetails{
+     line-height: 2;
+ }
+ .detailcontainer .deatilcontent{
+     max-width: 100%;
+ }
+ .detailcontainer .deatilcontent .detailinfo{
+     display: flex;
+     justify-content: space-between;
+ }
+ .detailcontainer .deatilcontent .detailinfo .imgbox img{
+   width: 350px;
+   height: 250px;
+ }
+ .detailcontainer .deatilcontent .detailinfo .productdetails{
+   margin-left: 30px;
+   margin-top: 20px;
+ }
+ .detailcontainer .deatilcontent.close{
+     border: none;
+     outline: none;
+     background-color: none;
+     cursor: pointer;
+    justify-content: space-between;
+ }
+ .blur-background {
+     filter: blur(5px);
+   }
+   .quantity-selector {
+     display: flex;
+     align-items: center;
+   }
+   
+   .quantity {
+     display: inline-block;
+     width: 2rem;
+     text-align: center;
+   }
+   
+   .decrement, .increment {
+     width: 2rem;
+     height: 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+   }
+   
+   .image-container {
+    position: relative;
+  }
+  
+  .hover-img {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .image-container:hover .main-img {
+    opacity: 0;
+  }
+  
+  .view-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-container:hover .view-button {
+    opacity: 1;
+  }
+  
